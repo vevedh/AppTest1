@@ -4,8 +4,13 @@
   "description": "Ionic Conference App",
   "author": "Ionic Team <hi@ionicframework.com>",
   "license": "Apache-2.0",
+  "main": "electron.js",
   "scripts": {
+    "electron:dev": "npm-run-all -p ng:serve electron:serve",
+    "ionic": "npm run ng:serve:web",
     "ng": "ng",
+    "ng:serve": "ng serve",
+    "ng:serve:web": "ng serve -o",
     "start": "ng serve",
     "build": "ng build",
     "test": "ng test --watch=false",
